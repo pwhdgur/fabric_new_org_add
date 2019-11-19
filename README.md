@@ -201,7 +201,7 @@ $# peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}'
 $# peer chaincode invoke -o orderer.example.com:7050 --tls $CORE_PEER_TLS_ENABLED --cafile $ORDERER_CA -C $CHANNEL_NAME -n mycc -c '{"Args":["invoke","a","b","10"]}'
 
 // Org1 cli for peer0.org2.example.com
-# peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}'
+$# peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}'
 - the result : 80
 
 6. 요약
