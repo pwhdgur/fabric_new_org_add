@@ -208,8 +208,14 @@ $# peer chaincode query -C $CHANNEL_NAME -n mycc -c '{"Args":["query","a"]}'
 - Hyperledger Fabric과 같은 권한이 부여 된 블록 체인의 권한 특성으로 인해 하나 이상의 조직을 추가하는 것은 결코 쉬운 일이 아닙니다. 주의를 요하는 작업입니다.
 
 7. Clean Up
+
 $ cd first-network
+
 $ ./byfn.sh down
+
 $ docker rm $(docker ps -aq)
+
 $ docker rmi $(docker images dev-* -q)
+
 $ docker network prune
+
